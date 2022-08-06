@@ -1,12 +1,11 @@
 <?php
 
 /** Partial to display Hero Contact Us - hero-contact-us.php */
-?>
-<?php
+
 $heading = get_sub_field('heading');
 $sub_heading = get_sub_field('sub_heading');
 ?>
-<div class="hero-contact-us">
+<div class="hero hero--contact-us">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -14,7 +13,7 @@ $sub_heading = get_sub_field('sub_heading');
           <?php
           if ($heading) {
           ?>
-            <h1 class="heading mb-3">
+            <h1 class="content__heading mb-3">
               <?php
               echo $heading;
               ?>
@@ -25,7 +24,7 @@ $sub_heading = get_sub_field('sub_heading');
           <?php
           if ($sub_heading) {
           ?>
-            <p class="heading-sub">
+            <p class="content__sub-heading">
               <?php
               echo $sub_heading;
               ?>

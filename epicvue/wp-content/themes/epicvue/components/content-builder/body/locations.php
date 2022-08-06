@@ -28,7 +28,7 @@
             ?>
 
             <div class="col-md-6">
-              <div class="content <?php if (get_row_index() % 2 == 0) {
+              <div class="location-card <?php if (get_row_index() % 2 == 0) {
                                     echo "mx-auto mr-md-0 ml-md-auto";
                                     if (get_row_index() - 1) {
                                       echo " last-item";
@@ -39,8 +39,8 @@
                                       echo " last-item";
                                     }
                                   } ?>">
-                <h5 class="title pb-2"><?php echo the_title(); ?></h5>
-                <div class="address d-flex flex-column">
+                <h5 class="location-card__title pb-2"><?php echo the_title(); ?></h5>
+                <div class="location-card__address d-flex flex-column">
                   <span><?php echo $address_one ?></span>
                   <?php if ($address_two) : ?>
                     <span><?php echo $address_two; ?></span>
@@ -50,10 +50,12 @@
                     <span><?php echo $state; ?></span>&nbsp;
                     <span><?php echo $zip_code; ?></span>
                   </div>
-                  <span class="phone"><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></span>
+                  <span class="location-card__phone">
+                    <a class="<?php if (get_row_index() - 1) { echo "last-item"; } ?>"href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                  </span>
                 </div>
                 <?php if ($image) : ?>
-                  <div class="image">
+                  <div class="location-card__image">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image_alt; ?>" loading="lazy" />
                   </div>
                 <?php endif; ?>

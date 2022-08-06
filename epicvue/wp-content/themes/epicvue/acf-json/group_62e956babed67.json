@@ -3,22 +3,6 @@
     "title": "Content Builder",
     "fields": [
         {
-            "key": "field_62ea7c65a181c",
-            "label": "Content Builder",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_62e956d75da30",
             "label": "Content Builder",
             "name": "content_builder",
@@ -251,7 +235,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "page-templates\/page-contact-us.php"
             }
         ]
     ],
@@ -267,5 +251,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659539633
+    "modified": 1659825603
 }

@@ -5,33 +5,34 @@
     margin-top: 137px;
     margin-bottom: 95px;
   }
-  .content {
+  .location-card {
     max-width: 458px;
     @include media-breakpoint-down(sm) {
       &:not(.last-item) {
         margin-bottom: 52px;
       }
     }
-    .title {
+    &__title {
       margin-bottom: 20px;
       text-transform: uppercase;
       letter-spacing: 2.8px;
       color: $green;
       border-bottom: solid 4px $green;
     }
-    .address {
+    &__address {
       font-size: 18px;
       letter-spacing: 0.18px;
       line-height: 28px;
       color: $teal;
       a {
         text-decoration: underline;
-        color: $orange;
+        color: $red;
+        &.last-item {
+          color: #aaa;
+        }
       }
     }
-    .phone {
-    }
-    .image {
+    &__image {
       margin-top: 40.5px;
     }
   }

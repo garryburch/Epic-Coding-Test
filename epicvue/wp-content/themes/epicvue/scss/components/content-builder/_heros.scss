@@ -1,24 +1,24 @@
 .hero {
-  &-contact-us { //HERO-CONTACT-US
+  &--contact-us { //HERO-CONTACT-US
     margin-top: 44px;
     @include media-breakpoint-up(md) {
       margin-top: 150px;
     }
     .content {
       max-width: 875px;
-      .heading {         
+      &__heading {         
         font-size: rem-calc(65);
         @include media-breakpoint-down(sm) {
           font-size: rem-calc(34);
           text-align: center;
         }
-        &-sub {          
-          font-size: rem-calc(20);
-          @include media-breakpoint-down(sm) {
-            font-size: rem-calc(16);
-            line-height: 1.875;
-            text-align: center;
-          }
+      }
+      &__sub-heading {          
+        font-size: rem-calc(20);
+        @include media-breakpoint-down(sm) {
+          font-size: rem-calc(16);
+          line-height: 1.875;
+          text-align: center;
         }
       }
     }
