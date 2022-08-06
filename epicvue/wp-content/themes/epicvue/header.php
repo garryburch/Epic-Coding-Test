@@ -12,6 +12,8 @@
 $main_logo = get_field('main_logo', 'option');
 $site_phone = get_field('site_phone', 'option');
 $site_phone_two = get_field('site_phone_two', 'option');
+$contact_us_link = get_field('contact_us_link', 'option');
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -66,7 +68,7 @@ $site_phone_two = get_field('site_phone_two', 'option');
 							);
 							?>
 							<div class="contact-us-button">
-								<a class="btn btn-white" href="<?php echo $schedule; ?>">Contact Us</a>
+								<a class="btn btn-white" href="<?php echo $contact_us_link; ?>">Contact Us</a>
 							</div>
 						</nav>
 					</div>

@@ -11,3 +11,4 @@ wpcs/
 vendor/
 ./node_modules
 node_modules/
+.nvmrc

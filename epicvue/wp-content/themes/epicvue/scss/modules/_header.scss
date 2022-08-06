@@ -28,6 +28,15 @@
                 justify-content: flex-end;
                 flex-direction: row;
                 .menu-item{
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(xl){
+        .navbar{
+            .navbar-nav{
+                .menu-item{
                     padding: 0 30px;
                 }
             }

@@ -8,10 +8,10 @@ $blue: #127387;
 // $purple:  #6f42c1;
 // $pink:    #e83e8c;
 // $red:     #dc3545;
-// $orange:  #fd7e14;
+$orange:  #ce5220;
 // $yellow:  #ffc107;
-// $green:   #28a745;
-// $teal:    #20c997;
+$green:   #2a6867;
+$teal:    #61A8B9;
 // $cyan:    #17a2b8;
 
 $primary:       $blue;
@@ -43,23 +43,32 @@ $line-height-base:                1.5;
 
 //Grid
 $grid-breakpoints: (
+  // xs: 0,
+  // sm: 1px,
+  // md: 768px,
+  // lg: 1440px,
+  // xl: 1600px
   xs: 0,
-  sm: 1px,
+  sm: 576px,
   md: 768px,
-  lg: 1440px,
-  xl: 1600px
+  lg: 992px,
+  xl: 1200px
 );
 $container-max-widths: (
-  sm: 768px,
-  md: 1440px,
-  lg: 1600px,
-  xl: 1800px
+  // sm: 540px,
+  // md: 768px,
+  // lg: 992px,
+  // xl: 1200px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
 );
-$grid-container-padding: (
-  sm: 15px,
-  md: 55px,
-  lg: 40px
-);
+// $grid-container-padding: (
+//   sm: 15px,
+//   md: 55px,
+//   lg: 40px
+// );
 
 // Grid columns
 $grid-columns:                12;
@@ -485,7 +494,7 @@ $desktop-nav-height: 100px;
 // $form-check-inline-margin-x:            .75rem;
 // $form-check-inline-input-margin-x:      .3125rem;
 
-// $form-grid-gutter-width:                10px;
+$form-grid-gutter-width:                    1rem;
 // $form-group-margin-bottom:              1rem;
 
 // $input-group-addon-color:               $input-color;

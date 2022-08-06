@@ -14,5 +14,10 @@
 
 //Templates
 
+//Partials
+@import "partials/content-builder/heros"; 
+@import "partials/content-builder/tabbed-content-forms"; 
+@import "partials/content-builder/locations"; 
+
 //Components
 @import "components/flexible-content"; 

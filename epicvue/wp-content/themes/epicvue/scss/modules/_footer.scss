@@ -1,31 +1,44 @@
-.footer{
-    .main-logo{
-        width: 150px;
-        text-align: center;
-        padding: 0;
-        box-sizing: content-box;
+.footer {
+    min-height: 128px;
+    padding: 52px 0;
+    > div {
+        @include media-breakpoint-up(xl) {
+            padding: 0 50px 0 90px;
+        }
     }
-    
-    .footer-menu{
+    .main-logo {
+        display: inline-block;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 18px;
+        }
+        img {
+            width: 150px;
+            text-align: center;
+            padding: 0;
+            box-sizing: content-box;
+        }
+    }
+
+    .footer-menu {
         list-style-type: none;
-        li a{
-            color: $white;
-        }
-        
-    }
-    
-    
-    @include media-breakpoint-up(lg){
-        .main-logo{
-            padding: 10px 20px 0 100px;
-        }
-        .footer-menu{
-            display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-up(md) {
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            li a{
-                padding: 10px 30px;
+        }
+        li a {
+            color: $white;
+            padding: 18px 0;
+            @include media-breakpoint-up(md) {
+                padding: 0 10px;
+            }
+            @include media-breakpoint-up(lg) {
+                padding: 0 30px;
+            }
+            @include media-breakpoint-up(xl) {
+                padding: 0 41px;
             }
         }
     }

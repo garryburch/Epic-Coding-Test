@@ -1,0 +1,135 @@
+$tab-gray: #e3e3e3;
+
+.tabbed-content-forms {
+  //TABBED CONTENT FORMS
+  margin-top: 36px;
+  @include media-breakpoint-up(md) {
+    margin-top: 114px;
+  }
+  .content {
+    max-width: 955px;
+    margin: auto;
+    .nav-item {
+      width: 100%;
+      @include media-breakpoint-up(lg) {
+        max-width: 227px;
+      }
+      @include media-breakpoint-down(md) {
+        flex: 1;
+      }
+      .nav-link {
+        color: $black;
+        border: 1px solid $tab-gray;
+        border-radius: 0;
+        font-weight: 700;
+        font-size: rem-calc(14);
+        transition: 0.3s;
+        @include media-breakpoint-up(md) {
+          font-size: rem-calc(20);
+        }
+        &.active {
+          background: $tab-gray;
+        }
+        &:hover {
+          background: $tab-gray;
+        }
+      }
+    }
+    hr {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .tab-content {
+      @include media-breakpoint-up(md) {
+        margin-top: 40px;
+      }
+      &-top {
+        &-phone, &-email {
+          font-weight: 700;
+          color: $black;
+          a {
+            color: $black;
+            font-size: 24px;
+            line-height: 29px;
+            @include media-breakpoint-up(sm) {
+              font-size: 40px;
+              line-height: 48px;
+            }
+            &:hover {
+              color: rgba(0, 0, 0, 0.7);
+              text-decoration: none;
+            }
+          }
+        }
+        &-phone {
+          @include media-breakpoint-up(sm) {
+            margin-right: 37px;
+          }
+        }
+      }
+      &-form {
+        margin-top: 77px;
+        @include media-breakpoint-up(sm) {
+          margin-top: 90px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          .form-group {
+            margin-bottom: 40px;
+          }
+          label {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0;
+            font-weight: 700;
+          }
+          input[type="text"],
+          input[type="email"],
+          input[type="number"] {
+            border: none;
+            border-bottom: 1px solid #707070;
+            border-radius: 0;
+            min-height: 24px;
+            padding: 30px 0 10px 0;
+            font-size: 20px;
+            line-height: 1.2;
+            color: $black;
+            &::placeholder {
+              color: $black;
+            }
+          }
+          textarea {
+            border: 1px solid #707070;
+            border-radius: 0;
+            padding: 13px 21px;
+            font-size: 20px;
+            line-height: 1.2;
+            color: $black;
+            &::placeholder {
+              color: $black;
+            }
+            @include media-breakpoint-down(sm) {
+              min-height: 258px;
+              font-size: 16px;
+              line-height: 1.875;
+            }
+          }
+          .btn {
+            @include media-breakpoint-up(md) {
+              min-width: 137px;
+              margin-left: auto;
+            }
+            @include media-breakpoint-down(sm) {
+              min-width: 195px;
+              min-height: 46px;
+              margin: auto;
+              font-size: 22px;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

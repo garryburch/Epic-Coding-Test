@@ -1,0 +1,38 @@
+.locations {
+  margin-top: 44px;
+  margin-bottom: 95px;
+  @include media-breakpoint-up(md) {
+    margin-top: 137px;
+    margin-bottom: 95px;
+  }
+  .content {
+    max-width: 458px;
+    @include media-breakpoint-down(sm) {
+      &:not(.last-item) {
+        margin-bottom: 52px;
+      }
+    }
+    .title {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      color: $green;
+      border-bottom: solid 4px $green;
+    }
+    .address {
+      font-size: 18px;
+      letter-spacing: 0.18px;
+      line-height: 28px;
+      color: $teal;
+      a {
+        text-decoration: underline;
+        color: $orange;
+      }
+    }
+    .phone {
+    }
+    .image {
+      margin-top: 40.5px;
+    }
+  }
+}

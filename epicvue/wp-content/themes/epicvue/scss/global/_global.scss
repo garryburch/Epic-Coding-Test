@@ -7,15 +7,15 @@ body, html{
 .grecaptcha-badge { visibility: hidden; }
 .row .row{ width: 100%; }
 
-.container{
-    padding: 0 map-get($grid-container-padding, "sm");
-    @include media-breakpoint-up(md) {
-        padding: 0 map-get($grid-container-padding, "md");
-    }
-    @include media-breakpoint-up(lg) {
-        padding: 0 map-get($grid-container-padding, "lg");
-    }
-}
+// .container{
+//     padding: 0 map-get($grid-container-padding, "sm");
+//     @include media-breakpoint-up(md) {
+//         padding: 0 map-get($grid-container-padding, "md");
+//     }
+//     @include media-breakpoint-up(lg) {
+//         padding: 0 map-get($grid-container-padding, "lg");
+//     }
+// }
 .relative{
     position: relative;
 }
@@ -45,6 +45,6 @@ video{
     border-radius: 20px;
 }
 .btn-white{
-    border: 1px solid $black;
+    border: 2px solid $black;
 }
 
